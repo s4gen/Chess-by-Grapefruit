@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Chess by Grapefruit</title>
+
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="assets/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <img src="assets/board.png" id="boardIMG">
+
+        <canvas
+        width="1200"
+        height="1200"
+        id="highlight">
+            Your browser does not support the canvas element.
+        </canvas>
+
+        <canvas
+        width="1200"
+        height="1200"
+        id="board">
+            Your browser does not support the canvas element.
+        </canvas>
+
+        <div
+        id="pieces"
+        style="display: none">
+            <img src="assets/pieces/bishopBlack.png" id="b">
+            <img src="assets/pieces/bishopWhite.png" id="B">
+            <img src="assets/pieces/kingBlack.png" id="k">
+            <img src="assets/pieces/kingWhite.png" id="K">
+            <img src="assets/pieces/knightBlack.png" id="n">
+            <img src="assets/pieces/knightWhite.png" id="N">
+            <img src="assets/pieces/pawnBlack.png" id="p">
+            <img src="assets/pieces/pawnWhite.png" id="P">
+            <img src="assets/pieces/queenBlack.png" id="q">
+            <img src="assets/pieces/queenWhite.png" id="Q">
+            <img src="assets/pieces/rookBlack.png" id="r">
+            <img src="assets/pieces/rookWhite.png" id="R">
+        </div>
+
+        <div class="container">
+            <h class="indicator" id="indicator">White to move.</h>
+        </div>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

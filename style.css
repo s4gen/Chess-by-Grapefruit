@@ -1,0 +1,34 @@
+#board {
+    display: block;
+    margin: 0 auto;
+    height: 50%;
+    width: 50%;
+    margin-top: -50%
+}
+
+#highlight {
+    display: block;
+    margin: 0 auto;
+    height: 50%;
+    width: 50%;
+    margin-top: -50%
+}
+
+body {
+    background-color: #272522;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: 50%;
+    width: 50%
+}
+
+.indicator {
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 300%;
+}
