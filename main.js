@@ -91,11 +91,11 @@ board.viableMove = (piece, [x_1, y_1], [x_2, y_2]) => {
 
 
     } else if (piece == 'P') {
-        if (x_1 == x_2 && y_1 === y_2 + 1) {
+        if (x_1 == x_2 && y_1 === y_2 + 1 && board.positions[y_2 * 8 - x_2][2] === null ) {
             return true
         } else {
-            // moving 2 spaecs
-            if (x_1 == x_2 && y_1 === y_2 + 2 && y_1 === 6) {
+            // moving 2 spaces
+            if (x_1 == x_2 && y_1 === y_2 + 2 && y_1 === 1 && board.positions[y_2 * 8 - x_2][2] === null && board.positions[(y_2 + 1) * 8 + x_2][2] === null && x_1 == x_2 && y_1 === y_2 + 1 && board.positions[y_2 * 8 - x_2][2] === null) {
                 return true
             } else {
                 // taking a piece
