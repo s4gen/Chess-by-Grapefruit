@@ -72,7 +72,7 @@ board.viableMove = (piece, [x_1, y_1], [x_2, y_2]) => {
 
         } else {
             // moving 2 spaecs
-            if (x_1 == x_2 && y_1 === y_2 - 2 && y_1 === 1 && board.positions[y_2 * 8 + x_2][2] === null && board.positions[(y_2 - 1) * 8 + x_2][2] === null) {
+            if (x_1 == x_2 && y_1 === y_2 - 2 && y_1 === 1 && board.positions[y_2 * 8 + x_2][2] === null && board.positions[(y_2 - 1) * 8 + x_2][2] === null && x_1 == x_2 && y_1 === y_2 - 1 && board.positions[y_2 * 8 + x_2][2] === null) {
                 return true
 
             } else {
